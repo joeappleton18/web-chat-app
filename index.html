@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .chat-area {
+        width: 100vw;
+      }
+
+      .chat {
+        height: 80vh;
+        width: 80vw;
+      }
+
+      .chat-response {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        color: gray
+      }
+
+      #message {
+        width: 80vw    
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <h1>Chat with me nowwwwww!</h1>
+
+    <div class="chat-area">
+      <div class="chat">
+       
+      </div>
+      <div class="chat-response">
+        <input type="text" placeholder="user name" id="username" />
+        <input type="text" placeholder="message" id="message" />
+        <button id="submit">Send</button>
+      </div>
+      <!-- /.chat -->
+    </div>
+    <!-- /.chat-area -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCoWWOm0nFhn5wiKq5Y8WjYRk1EpHBMG1M",
+        authDomain: "chat-application-81516.firebaseapp.com",
+        databaseURL: "https://chat-application-81516.firebaseio.com",
+        projectId: "chat-application-81516",
+        storageBucket: "chat-application-81516.appspot.com",
+        messagingSenderId: "703285965146",
+        appId: "1:703285965146:web:ed5ac864288f721b264363"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "my-chat-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch main.scss:css/main.css",
+    "browser-sync": "browser-sync start --server --files \"*.html, js/main.js, css/*.css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "sass": "^1.23.3"
+  },
+  "dependencies": {}
+}
